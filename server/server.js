@@ -86,11 +86,15 @@ app.delete("/students/:id", async (req, res) => {
    });
  }
 });
-// Test Route
+
 app.get("/", (req, res) => {
  res.send("Server is working!");
 });
-// Start Server
+
+app.get("/test", (req, res) => {
+ res.send("Test route is working!");
+});
+
 app.listen(5000, () => {
  console.log("Server running on port 5000");
 });
